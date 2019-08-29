@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户编辑</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/static/css/font.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+    <div class="x-body">
+        <form class="layui-form" action="" method="POST">
+            <div class="layui-form-item">
+                <label class="layui-form-label">商户ID</label>
+                <div class="layui-input-block">
+                    <input name="uid" type="text" placeholder="商户号ID, 自动分配" autocomplete="off" class="layui-input" readonly>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">商户名称</label>
+                <div class="layui-input-block">
+                    <input name="username" type="text" lay-verify="required" placeholder="商户名称" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">Email</label>
+                <div class="layui-input-block">
+                    <input name="email" type="email" lay-verify="required" placeholder="邮箱地址" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">Phone</label>
+                <div class="layui-input-block">
+                    <input name="phone" type="text" placeholder="手机号码" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">QQ</label>
+                <div class="layui-input-block">
+                    <input name="qq" type="text" placeholder="联系QQ" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">登录密码</label>
+                <div class="layui-input-block">
+                    <input name="psw" type="text" lay-verify="required" placeholder="登录密码" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">状态</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="state" value="1" title="正常" checked>
+                    <input type="radio" name="state" value="0" title="停用">
+                    <input type="radio" name="state" value="-1" title="审核中">
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">备注</label>
+                <div class="layui-input-block">
+                    <textarea name="memo" placeholder="请输入内容" class="layui-textarea" maxlength="32"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formSubmit">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="/static/layui/layui.js"></script>
+<script>
+    layui.use(['form', 'jquery', 'layer', 'table'], function () {
+	    var form  = layui.form,
+	        $     = layui.jquery,
+	        // table = layui.table,
+	        layer = layui.layer
+
+	    //监听提交
+	    form.on('submit(formSubmit)', function (data) {
+		    $.ajax({
+			    type    : 'POST',
+			    url     : '/merchant/edit',
+			    data    : data.field,
+			    dataType: 'json',
+			    success : function (res) {
+				    if (res.code == 0) {
+					    // table 自动化渲染的重载
+					    parent.layui.table.reload('tableList') // 刷新数据表格
+					    //获得frame索引, 并关闭当前frame
+					    layer.msg('成功', { icon: 1, time: 1000 }, function () {parent.layer.close(parent.layer.getFrameIndex(window.name))})
+				    } else {
+					    layer.msg(res.msg, { icon: 2 })
+				    }
+			    },
+			    error   : function (err) {
+				    err.responseJSON.code ? layer.msg(err.responseJSON.msg, { icon: 2 }) : layer.msg('未知错误', { icon: 5 })
+			    },
+		    })
+		    return false
+	    })
+    })
+</script>
+</html>

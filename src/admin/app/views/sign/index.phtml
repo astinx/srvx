@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xPay</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="<?=$config->domain->misc;?>/css/bootstrap.min.css?v=3.3.7" rel="stylesheet">
+    <link href="<?=$config->domain->misc;?>/css/font-awesome.css?v=4.7" rel="stylesheet">
+    <link href="<?=$config->domain->misc;?>/css/animate.css" rel="stylesheet">
+    <link href="<?=$config->domain->misc;?>/css/style.css?v=4.1.0" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+</head>
+<body class="gray-bg align-center">
+<div >
+<div class="middle-box text-center loginscreen">
+    <div class="ibox-title"><h3>Dashboard</h3></div>
+    <div class="ibox-content">
+        <form id="signInForm" class="m-t" role="form">
+            <div class="form-group">
+                <input type="text" name="username" class="form-control" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="form-group clearfix">
+                <input type="text" name="captcha" class="form-control captcha-form-input" placeholder="Captcha" maxlength="4" required>
+                <img class="form-control captcha-form-pic" onclick="this.src='//a.jpay.cc/sign/getCaptcha?'+Math.random()" src="//a.jpay.cc/sign/getCaptcha"">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="g_code" class="form-control" placeholder="Google Auth Code" required>
+            </div>
+            <div class="form-group hidden">
+                <input type="text" name="csrf" class="form-control" value="">
+            </div>
+            <div class="text-danger"></div>
+            <button onclick="signIn()" type="button" class="btn btn-primary block full-width m-b">Sign In</button>
+        </form>
+    </div>
+</div>
+</div>
+<!-- 全局js -->
+<script src="<?=$config->domain->misc;?>/js/jquery.min.js?v=2.1.4"></script>
+<script src="<?=$config->domain->misc;?>/js/bootstrap.min.js?v=3.3.7"></script>
+<script>
+    var bodyBgs = [];
+    bodyBgs[0] = "http://www.wallcoo.com/nature/2011_Landscape_1920_Desktop_13/wallpapers/1920x1080/Alberta%20in%20Autumn%2C%20Canada.jpg";
+    bodyBgs[1] = "http://www.wallcoo.com/nature/2011_Landscape_1920_Desktop_13/wallpapers/1920x1080/Cascade%20Head%2C%20Oregon%20Coast%2C%20Oregon.jpg";
+    bodyBgs[2] = "http://www.wallcoo.com/nature/2011_Landscape_1920_Desktop_13/wallpapers/1920x1080/Autumn%20Color%2C%20North%20Lake%2C%20Eastern%20Sierra%2C%20California.jpg";
+    bodyBgs[3] = "http://www.wallcoo.com/nature/2011_Landscape_1920_Desktop_13/wallpapers/1920x1080/Beech%20Trees%2C%20Valley%20Gardens%2C%20Surrey%2C%20England.jpg";
+    bodyBgs[4] = "http://www.wallcoo.com/nature/2011_Landscape_1920_Desktop_13/wallpapers/1920x1080/The%20Bay%20of%20Martyrs%2C%20Peterborough%2C%20Australia.jpg";
+
+    var randomBgIndex = Math.round( Math.random() * 4 );
+    //输出随机的背景图
+    $("body").css("background","url('" + bodyBgs[randomBgIndex] + "') no-repeat 50% 0");
+
+    // ajax 提交
+    function signIn() {
+        $.ajax({
+            type: "POST",
+            url: '/sign/in',//提交的URL
+            data: $('#signInForm').serialize(), // 要提交的表单,必须使用name属性
+            dataType: "json",
+            success: function (data) {
+                window.location.href = "/"
+            },
+            error: function (data) {
+                alert(data.responseJSON.msg)
+            }
+        });
+    }
+</script>
+</body>
+</html>
