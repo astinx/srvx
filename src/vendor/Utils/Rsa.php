@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Utils;
+namespace SRVX\Utils;
 class Rsa {
 	private $res;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\PayAccPack;
-use XPAY\Model\PayBankList;
-use XPAY\Model\TxPayHis;
-use XPAY\Model\UserBankList;
-use XPAY\Model\PayChan;
-use XPAY\Model\PayChanProd;
-use XPAY\Model\UserRate;
-use XPAY\Msg;
+use SRVX\Model\PayAccPack;
+use SRVX\Model\PayBankList;
+use SRVX\Model\TxPayHis;
+use SRVX\Model\UserBankList;
+use SRVX\Model\PayChan;
+use SRVX\Model\PayChanProd;
+use SRVX\Model\UserRate;
+use SRVX\Msg;
 
 class BankService extends BaseService {
 	public function getBankList() {

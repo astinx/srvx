@@ -19,11 +19,7 @@ showMsg('保存成功', 0);
 
 function getSign($arr, $key) {
 	ksort($arr);
-	$s = '';
-	foreach ($arr as $k => $v) {
-		$s .= ($k . '=' . $v . '&');
-	}
-	return md5($s . 'key=' . $key);
+	return md5(urldecode(http_build_query($arr)).'&key='.$key);
 }
 
 function jsonToPost() {

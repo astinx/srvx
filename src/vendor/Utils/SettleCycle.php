@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Utils;
+namespace SRVX\Utils;
 
 class SettleCycle {
 	const SettleTime = 36000; //早上10点

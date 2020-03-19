@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Controllers;
+namespace SRVX\Api\Controllers;
 
 // H5页面
 class WapController extends ControllerBase {

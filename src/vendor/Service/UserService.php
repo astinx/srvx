@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\AuthUserApi;
-use XPAY\Model\AuthUserOtp;
-use XPAY\Model\UserList;
-use XPAY\Msg;
+use SRVX\Model\AuthUserApi;
+use SRVX\Model\AuthUserOtp;
+use SRVX\Model\UserList;
+use SRVX\Msg;
 
 /**
  * 用户服务

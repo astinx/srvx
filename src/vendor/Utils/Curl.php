@@ -1,10 +1,10 @@
 <?php
 
-namespace XPAY\Utils;
+namespace SRVX\Utils;
 
 /**
  * Class Curl
- * @package XPAY\Utils
+ * @package SRVX\Utils
  */
 class Curl {
 	/**

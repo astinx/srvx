@@ -1,12 +1,12 @@
 <?php
 
-namespace XPAY\Api\Lib\Service;
+namespace SRVX\Api\Lib\Service;
 
-use XPAY\Api\Common\Msg;
+use SRVX\Api\Common\Msg;
 
 /**
  * Class BaseService
- * @package XPAY\Service
+ * @package SRVX\Service
  * @property \Redis                         $redis
  * @property \Phalcon\Session\Adapter\Redis $session
  * @property \Phalcon\Config                $config
@@ -14,7 +14,7 @@ use XPAY\Api\Common\Msg;
  * @property \Phalcon\Db\AdapterInterface   $dbm
  * @property \Phalcon\Db\AdapterInterface   $dbs
  * @property \Phalcon\Cache\Backend\Redis   $cache
- * @property \XPAY\Api\Common\Msg           $msg
+ * @property \SRVX\Api\Common\Msg           $msg
  */
 class BaseService extends \Phalcon\Mvc\User\Component {
 	/**

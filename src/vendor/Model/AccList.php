@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Model;
+namespace SRVX\Model;
 
 use Phalcon\Validation;
 use Phalcon\Validation\Validator\Email as EmailValidator;

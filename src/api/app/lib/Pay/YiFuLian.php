@@ -1,13 +1,13 @@
 <?php
 
-namespace XPAY\Api\Lib\Pay;
+namespace SRVX\Api\Lib\Pay;
 
 /**
  * 易付联
  * http://b.epaylinki.com
  * 联系人: QQ
  * Class YFL
- * @package XPAY\Api\Lib\Pay
+ * @package SRVX\Api\Lib\Pay
  */
 class YiFuLian extends PayBase {
 	// 链接

@@ -1,9 +1,9 @@
 <?php
-namespace XPAY\Service;
+namespace SRVX\Service;
 
 /**
  * Class AdminPermService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class AdminPermService extends BaseService {
 	var $PermCacheKey = 'adm_perm_';

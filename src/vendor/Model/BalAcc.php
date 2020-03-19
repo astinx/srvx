@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Model;
+namespace SRVX\Model;
 
 class BalAcc extends BaseModel
 {

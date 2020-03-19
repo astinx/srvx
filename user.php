@@ -9,6 +9,15 @@ $data['aes_key']     = '4rfv(IJN!QAZ0okm';
 $data['aes_mode']    = 'AES-128-CBC';
 $data['encrypt_url'] = AesEncrypt($data['url'], $data['aes_key']);
 
+$args = [
+	'uid' => $data['uid'],
+	'sender' => '10086',
+	'time' => time(),
+	'content'=> '这里是测试文本'
+];
+ksort($args);
+$data['sign_format'] = urldecode(http_build_query($args)).'&key='.$key;
+
 echo json_encode($data, 320);
 
 function jsonToPost() {

@@ -2,7 +2,7 @@
 
 /**
  * Class AsyncTask
- * @property \XPAY\Service $service
+ * @property \SRVX\Service $service
  * @property \Redis        $redis
  * @property \Redis        $session
  */

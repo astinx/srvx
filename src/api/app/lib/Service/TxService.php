@@ -1,8 +1,8 @@
 <?php
 
-namespace XPAY\Api\Lib\Service;
+namespace SRVX\Api\Lib\Service;
 
-use XPAY\Api\Model\TxPay;
+use SRVX\Api\Model\TxPay;
 
 class TxService extends BaseService {
 	public function createPayTx($data) {

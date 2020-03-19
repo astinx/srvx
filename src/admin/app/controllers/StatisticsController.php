@@ -1,10 +1,10 @@
 <?php
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
 /**
  * 统计
  * Class StatisticsController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class StatisticsController extends ControllerBase {
 	public function initialize() {

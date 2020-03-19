@@ -1,13 +1,13 @@
 <?php
 
-namespace XPAY\Api\Lib\Pay;
+namespace SRVX\Api\Lib\Pay;
 
 /**
  * 富通支付
  * http://ft-pay.com
  * 联系人: QQ
  * Class ft
- * @package XPAY\Api\Lib\Pay
+ * @package SRVX\Api\Lib\Pay
  */
 class FuTong extends PayBase implements PayInterface {
 	var $appUrl = '';  // 链接

@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
 /**
  * 通知消息
  * Class MessageService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class MessageService extends BaseService {
 

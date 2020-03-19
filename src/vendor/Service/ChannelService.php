@@ -1,12 +1,12 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\PayAcc;
-use XPAY\Model\PayAccPack;
-use XPAY\Model\PayChan;
-use XPAY\Model\PayChanProd;
-use XPAY\Msg;
+use SRVX\Model\PayAcc;
+use SRVX\Model\PayAccPack;
+use SRVX\Model\PayChan;
+use SRVX\Model\PayChanProd;
+use SRVX\Msg;
 
 class ChannelService extends BaseService {
 	// **************************** 网关 ****************************

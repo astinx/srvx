@@ -1,9 +1,9 @@
 <?php
 
-namespace XPAY\Agent\Controllers;
+namespace SRVX\Agent\Controllers;
 
-use XPAY\Base;
-use XPAY\Msg;
+use SRVX\Base;
+use SRVX\Msg;
 
 class TxController extends ControllerBase {
 	//-------------------------------------------------------------------------------------------------------------------------

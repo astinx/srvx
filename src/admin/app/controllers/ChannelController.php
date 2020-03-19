@@ -1,14 +1,14 @@
 <?php
 
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
-use XPAY\Base;
-use XPAY\Msg;
+use SRVX\Base;
+use SRVX\Msg;
 
 /**
  * 通道管理
  * Class ChannelController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class ChannelController extends ControllerBase {
 	public function initialize() {

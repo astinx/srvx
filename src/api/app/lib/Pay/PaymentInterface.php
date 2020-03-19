@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Api\Lib\Pay;
+namespace SRVX\Api\Lib\Pay;
 
 /**
  * 支付接口标准, 所有接口都必须遵循以下接口格式
  * Interface PayInterface
- * @package XPAY\Api\Lib\Pay
+ * @package SRVX\Api\Lib\Pay
  */
 interface PaymentInterface {
 	public function ebank(array $data, string $key);       		// 网银网关

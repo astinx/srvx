@@ -1,8 +1,8 @@
 <?php
 
-namespace XPAY\Agent\Controllers;
-use XPAY\Utils\Crypto;
-use XPAY\Utils\Rsa;
+namespace SRVX\Agent\Controllers;
+use SRVX\Utils\Crypto;
+use SRVX\Utils\Rsa;
 
 ini_set('display_errors', '1');
 error_reporting(-1);
@@ -11,7 +11,7 @@ ignore_user_abort(TRUE);
 
 /**
  * Class TestController
- * @package XPAY\Agent\Controllers
+ * @package SRVX\Agent\Controllers
  */
 class TestController extends ControllerBase {
 	public function initialize() {

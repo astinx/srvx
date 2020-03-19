@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Api\Lib\Service;
+namespace SRVX\Api\Lib\Service;
 
-use XPAY\Api\Common\Base;
-use XPAY\Api\Common\Msg;
-use XPAY\Api\Model\AccList;
-use XPAY\Api\Model\AuthAccApi;
+use SRVX\Api\Common\Base;
+use SRVX\Api\Common\Msg;
+use SRVX\Api\Model\AccList;
+use SRVX\Api\Model\AuthAccApi;
 
 class AccountService extends BaseService {
 	const AccPrefix = 'acc_';

@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
 /**
  * 用户权限管理
  * Class UserPermService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class UserPermService extends BaseService {
 	var $PermCacheKey = 'user_perm_';

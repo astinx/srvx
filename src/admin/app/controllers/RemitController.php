@@ -1,10 +1,10 @@
 <?php
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
 /**
  * TODO 大学问
  * Class RemitController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class RemitController extends ControllerBase {
 	public function initialize() {

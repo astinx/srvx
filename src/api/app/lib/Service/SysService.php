@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Lib\Service;
+namespace SRVX\Api\Lib\Service;
 
 class SysService extends BaseService {
 	// 检查是否黑名单IP

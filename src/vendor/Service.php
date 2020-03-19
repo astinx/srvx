@@ -2,15 +2,15 @@
 
 namespace XPAY;
 
-use XPAY\Service\TxService;
+use SRVX\Service\TxService;
 
 /**
  * Class Services
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class Service {
 	/**
-	 * @return \XPAY\Service\AdminService()
+	 * @return \SRVX\Service\AdminService()
 	 */
 	public function admin() {
 		return new Service\AdminService();
@@ -25,7 +25,7 @@ class Service {
 
 	/**
 	 * 添加如下语句就可以在IDE显示提示
-	 * @return \XPAY\Service\UserService()
+	 * @return \SRVX\Service\UserService()
 	 */
 	public function user() {
 		return new Service\UserService();
@@ -40,7 +40,7 @@ class Service {
 	}
 
 	/**
-	 * @property \XPAY\Service\BankService()
+	 * @property \SRVX\Service\BankService()
 	 * @return Service\BankService
 	 */
 	public function bank() {
@@ -48,7 +48,7 @@ class Service {
 	}
 
 	/**
-	 * @property \XPAY\Service\CaptchaService()
+	 * @property \SRVX\Service\CaptchaService()
 	 * @return Service\CaptchaService()
 	 */
 	public function captcha() {
@@ -56,7 +56,7 @@ class Service {
 	}
 
 	/**
-	 * @property \XPAY\Service\MailService()
+	 * @property \SRVX\Service\MailService()
 	 * @return Service\MailService
 	 */
 	public function mail() {
@@ -64,7 +64,7 @@ class Service {
 	}
 
 	/**
-	 * @property \XPAY\Service\SmsService()
+	 * @property \SRVX\Service\SmsService()
 	 * @return Service\SmsService
 	 */
 	public function sms() {
@@ -72,7 +72,7 @@ class Service {
 	}
 
 	/**
-	 * @property \XPAY\Service\UserSignService()
+	 * @property \SRVX\Service\UserSignService()
 	 * @return Service\UserSignService
 	 */
 	public function sign() {
@@ -80,7 +80,7 @@ class Service {
 	}
 
 	/**
-	 * @property \XPAY\Service\LogService()
+	 * @property \SRVX\Service\LogService()
 	 * @return Service\LogService
 	 */
 	public function log() {
@@ -88,7 +88,7 @@ class Service {
 	}
 
 	/**
-	 * @property \XPAY\Service\OrderService()
+	 * @property \SRVX\Service\OrderService()
 	 * @return Service\OrderService
 	 */
 	public function order() {

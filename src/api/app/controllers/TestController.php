@@ -1,10 +1,10 @@
 <?php
 
-namespace XPAY\Api\Controllers;
+namespace SRVX\Api\Controllers;
 
-use XPAY\Api\Common\Msg;
-use XPAY\Api\Lib\Pay;
-use XPAY\Utils\QRcode;
+use SRVX\Api\Common\Msg;
+use SRVX\Api\Lib\Pay;
+use SRVX\Utils\QRcode;
 
 class TestController extends ControllerBase {
 	//-------------------------------------------------------------------------------------------------------------------------

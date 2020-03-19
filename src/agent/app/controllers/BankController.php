@@ -1,13 +1,13 @@
 <?php
 
-namespace XPAY\Agent\Controllers;
+namespace SRVX\Agent\Controllers;
 
-use XPAY\Base;
-use XPAY\Msg;
+use SRVX\Base;
+use SRVX\Msg;
 
 /**
  * Class BankController
- * @package XPAY\Agent\Controllers
+ * @package SRVX\Agent\Controllers
  */
 class BankController extends ControllerBase {
 	public function initialize() {

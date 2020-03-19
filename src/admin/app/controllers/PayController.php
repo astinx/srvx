@@ -1,10 +1,10 @@
 <?php
 
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
 /**
  * Class OrderController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class PayController extends ControllerBase {
 	public function initialize() {

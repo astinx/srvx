@@ -59,7 +59,7 @@ $di->setShared('dispatcher', function () {
 	});
 
 	$dispatcher = new MvcDispatcher();
-	$dispatcher->setDefaultNamespace('\XPAY\Agent\Controllers');
+	$dispatcher->setDefaultNamespace('\SRVX\Agent\Controllers');
 	//Bind the EventsManager to the dispatcher
 	$dispatcher->setEventsManager($eventsManager);
 	return $dispatcher;

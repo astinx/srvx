@@ -89,7 +89,7 @@ $di->setShared('redis', function () use ($config) {
 });
 
 $di->setShared('s', function () {
-	return new XPAY\Service;
+	return new SRVX\Service;
 });
 
 //從庫
@@ -127,7 +127,7 @@ $di->setShared('dbWrite', function () use ($config) {
 
 //注入服务
 $di->setShared('service', function () {
-	return new XPAY\Service();
+	return new SRVX\Service();
 });
 
 //设置console

@@ -4,17 +4,17 @@
  * 本服务相等于一个容器,如果要使用到Phalcon框架中的di则继承
  */
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
 use Phalcon\Mvc\Model\Message as ModelMessage;
 use Phalcon\Mvc\User\Component;
 use Phalcon\Validation\Message as ValidationMessage;
 use Phalcon\Validation\Message\Group as MessageGroup;
-use XPAY\Model\LogUserOp;
+use SRVX\Model\LogUserOp;
 
 /**
  * Class BaseService
- * @package XPAY\Service
+ * @package SRVX\Service
  * @property \Redis                         $redis
  * @property \Phalcon\Session\Adapter\Redis $session
  * @property \Phalcon\Config                $config
@@ -228,7 +228,7 @@ class BaseService extends Component {
 	 * @return bool
 	 */
 	public function checkOtpAuth($gAuthKey, $code) {
-		$g = new \XPAY\Utils\OTP();
+		$g = new \SRVX\Utils\OTP();
 		return $g->checkCode($gAuthKey, $code);
 	}
 

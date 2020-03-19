@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Utils;
+namespace SRVX\Utils;
 
 use Phalcon\Mvc\User\Component;
 use Phalcon\Logger\Adapter\File as FileAdapter;

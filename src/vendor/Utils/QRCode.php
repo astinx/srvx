@@ -1,5 +1,5 @@
 <?php
-namespace XPAY\Utils;
+namespace SRVX\Utils;
 
 // Encoding modes
 define('QR_MODE_NUL', -1);

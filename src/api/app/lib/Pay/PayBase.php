@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Lib\Pay;
+namespace SRVX\Api\Lib\Pay;
 
 class PayBase {
 	var $appId;  // app名字

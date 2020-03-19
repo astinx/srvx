@@ -1,9 +1,9 @@
 <?php
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
 /**
  * Class AdminController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class AdminController extends ControllerBase {
 	public function initialize() {

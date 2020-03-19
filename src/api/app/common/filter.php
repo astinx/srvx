@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Common;
+namespace SRVX\Api\Common;
 
 class Filter{
 

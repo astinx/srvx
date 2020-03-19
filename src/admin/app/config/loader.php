@@ -9,6 +9,6 @@ $loader = new \Phalcon\Loader();
 $loader->registerDirs([
 
 ])->registerNamespaces([
-	'XPAY\Admin\Controllers' => $config->application->controllersDir,
+	'SRVX\Admin\Controllers' => $config->application->controllersDir,
 	'XPAY'                   => $config->application->vendorDir,
 ])->register();

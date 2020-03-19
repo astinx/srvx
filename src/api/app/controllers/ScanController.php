@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Controllers;
+namespace SRVX\Api\Controllers;
 
 // 扫码支付
 class ScanController extends ControllerBase {

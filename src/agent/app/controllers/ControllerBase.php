@@ -1,19 +1,19 @@
 <?php
 
-namespace XPAY\Agent\Controllers;
+namespace SRVX\Agent\Controllers;
 
 use Phalcon\Mvc\Controller;
-use XPAY\Msg;
+use SRVX\Msg;
 
 /**
  * Class ControllerBase
- * @package XPAY\Agent\Controllers
+ * @package SRVX\Agent\Controllers
  * @property \Phalcon\Queue\Beanstalk        $queue
  * @property \Phalcon\Tag                    $tag
  * @property \Phalcon\Cache\BackendInterface $cache
  * @property \Phalcon\Http\Response\Cookies  $cookies
  * @property \Phalcon\Escaper                $escaper
- * @property \XPAY\Service                   $s
+ * @property \SRVX\Service                   $s
  * @property \Redis                          $redis
  * @property \Phalcon\Session\Adapter\Redis  $session
  * @property \Phalcon\Config                 $config

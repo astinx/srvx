@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Api\Controllers;
+namespace SRVX\Api\Controllers;
 
 /**
  * TODO 代付出款
  * Class RemitController
- * @package XPAY\Api\Controllers
+ * @package SRVX\Api\Controllers
  */
 class RemitController extends ControllerBase {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Template;
+namespace SRVX\Template;
 
 class Sms{
 	//注册类

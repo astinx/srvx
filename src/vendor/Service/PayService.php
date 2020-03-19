@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
 /**
  * 封锁服务
  * Class PayService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class PayService extends BaseService {
 

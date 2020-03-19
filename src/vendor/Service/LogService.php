@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\BalUserLog;
-use XPAY\Model\LogUserOp;
-use XPAY\Model\TxPayHis;
-use XPAY\Model\TxRemitHis;
+use SRVX\Model\BalUserLog;
+use SRVX\Model\LogUserOp;
+use SRVX\Model\TxPayHis;
+use SRVX\Model\TxRemitHis;
 
 class LogService extends BaseService {
 	/**

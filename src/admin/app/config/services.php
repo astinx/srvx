@@ -148,7 +148,7 @@ $di->setShared('redis', function () use ($config) {
  * 服务
  */
 $di->setShared('s', function () {
-	return new XPAY\Service;
+	return new SRVX\Service;
 });
 
 /* @var $di Phalcon\DI\FactoryDefault */
@@ -194,7 +194,7 @@ $di->setShared('dispatcher', function () {
 	//    $eventsManager->attach('dispatch', $security);
 
 	$dispatcher = new MvcDispatcher();
-	$dispatcher->setDefaultNamespace('\XPAY\Admin\Controllers');
+	$dispatcher->setDefaultNamespace('\SRVX\Admin\Controllers');
 
 	//Bind the EventsManager to the dispatcher
 	$dispatcher->setEventsManager($eventsManager);

@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Home\Controllers;
+namespace SRVX\Home\Controllers;
 
 /**
  * 系统
  * Class SysController
- * @package XPAY\Home\Controllers
+ * @package SRVX\Home\Controllers
  */
 class SysController extends ControllerBase {
 	//-------------------------------------------------------------------------------------------------------------------------

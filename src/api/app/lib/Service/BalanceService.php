@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Lib\Service;
+namespace SRVX\Api\Lib\Service;
 
 class BalanceService extends BaseService {
 	public function t() {

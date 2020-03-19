@@ -1,9 +1,9 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Msg;
-use XPAY\Model\AdmList;
+use SRVX\Msg;
+use SRVX\Model\AdmList;
 
 class AdminService extends BaseService {
 	/**

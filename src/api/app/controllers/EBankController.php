@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Api\Controllers;
+namespace SRVX\Api\Controllers;
 
 // 网银支付
 
-use XPAY\Api\Common\Base;
-use XPAY\Api\Common\Msg;
+use SRVX\Api\Common\Base;
+use SRVX\Api\Common\Msg;
 
 class EBankController extends ControllerBase {
 	public function create() {

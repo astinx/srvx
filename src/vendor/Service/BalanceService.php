@@ -1,12 +1,12 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\BalUser;
-use XPAY\Model\BalUserLog;
-use XPAY\Model\TxPay;
-use XPAY\Model\TxPayHis;
-use XPAY\Model\TxRemitHis;
+use SRVX\Model\BalUser;
+use SRVX\Model\BalUserLog;
+use SRVX\Model\TxPay;
+use SRVX\Model\TxPayHis;
+use SRVX\Model\TxRemitHis;
 
 class BalanceService extends BaseService {
 

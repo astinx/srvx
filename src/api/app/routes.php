@@ -11,50 +11,50 @@ $app->notFound(function () {
 
 // 网银支付
 $ebank = new Collection();
-$ebank->setHandler('XPAY\Api\Controllers\EBankController', true);
+$ebank->setHandler('SRVX\Api\Controllers\EBankController', true);
 $ebank->post('/pay/ebank/create','create');
 $app->mount($ebank);
 
 // 快捷支付
 $quick = new Collection();
-$quick->setHandler('XPAY\Api\Controllers\QuickController', true);
+$quick->setHandler('SRVX\Api\Controllers\QuickController', true);
 $quick->post('/pay/quick/create','create');
 $app->mount($quick);
 
 // wap支付
 $wap = new Collection();
-$wap->setHandler('XPAY\Api\Controllers\WapController', true);
+$wap->setHandler('SRVX\Api\Controllers\WapController', true);
 $wap->post('/pay/wap/create','create');
 $app->mount($wap);
 
 // qr支付
 $qr = new Collection();
-$qr->setHandler('XPAY\Api\Controllers\QRController', true);
+$qr->setHandler('SRVX\Api\Controllers\QRController', true);
 $qr->post('/pay/scan/create','create');
 $app->mount($qr);
 
 // 代付
 $remit = new Collection();
-$remit->setHandler('XPAY\Api\Controllers\RemitController', true);
+$remit->setHandler('SRVX\Api\Controllers\RemitController', true);
 $remit->post('/remit/create','create');
 $app->mount($remit);
 
 // 查询
 $query = new Collection();
-$query->setHandler('XPAY\Api\Controllers\QueryController', true);
+$query->setHandler('SRVX\Api\Controllers\QueryController', true);
 $query->post('/query/tx/pay','pay');
 $query->post('/query/tx/remit','remit');
 $app->mount($query);
 
 // 账户信息
 $acc = new Collection();
-$acc->setHandler('XPAY\Api\Controllers\RemitController', true);
+$acc->setHandler('SRVX\Api\Controllers\RemitController', true);
 $acc->post('/acc/balance','balance');
 $acc->post('/acc/stats','stats');
 $app->mount($acc);
 
 // TODO 测试控制器
 $t = new Collection();
-$t->setHandler('XPAY\Api\Controllers\TestController', true);
+$t->setHandler('SRVX\Api\Controllers\TestController', true);
 $t->get('/test','index');
 $app->mount($t);

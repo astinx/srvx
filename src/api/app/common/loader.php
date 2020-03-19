@@ -8,9 +8,9 @@ $loader = new \Phalcon\Loader();
  */
 
 $loader->registerNamespaces([
-	'XPAY\Api\Common'      => $config->app->commonDir,
-	'XPAY\Api\Lib'         => $config->app->libDir,
-	'XPAY\Api\Controllers' => $config->app->controllersDir,
-	'XPAY\Api\Model'       => $config->app->modelsDir,
-	'XPAY\Api\Lib\Pay'         => $config->app->payDir,
+	'SRVX\Api\Common'      => $config->app->commonDir,
+	'SRVX\Api\Lib'         => $config->app->libDir,
+	'SRVX\Api\Controllers' => $config->app->controllersDir,
+	'SRVX\Api\Model'       => $config->app->modelsDir,
+	'SRVX\Api\Lib\Pay'         => $config->app->payDir,
 ])->register();

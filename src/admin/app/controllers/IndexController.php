@@ -1,5 +1,5 @@
 <?php
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
 class IndexController extends ControllerBase {
 	public function initialize() {

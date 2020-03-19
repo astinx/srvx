@@ -1,14 +1,14 @@
 <?php
 
-namespace XPAY\Agent\Controllers;
+namespace SRVX\Agent\Controllers;
 
-use XPAY\Msg;
-use XPAY\Base;
+use SRVX\Msg;
+use SRVX\Base;
 
 /**
  * 用戶
  * Class WalletController
- * @package XPAY\Agent\Controllers
+ * @package SRVX\Agent\Controllers
  */
 class LogController extends ControllerBase {
 	public function initialize() {

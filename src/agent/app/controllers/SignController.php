@@ -1,14 +1,14 @@
 <?php
 
-namespace XPAY\Agent\Controllers;
+namespace SRVX\Agent\Controllers;
 
-use XPAY\Msg;
-use XPAY\Utils\Validate;
+use SRVX\Msg;
+use SRVX\Utils\Validate;
 
 /**
  * 登錄
  * Class SignController
- * @package XPAY\Agent\Controllers
+ * @package SRVX\Agent\Controllers
  */
 class SignController extends ControllerBase {
 	public function initialize() {

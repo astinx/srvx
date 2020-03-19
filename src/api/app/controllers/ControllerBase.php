@@ -1,14 +1,14 @@
 <?php
 
-namespace XPAY\Api\Controllers;
+namespace SRVX\Api\Controllers;
 
 use Phalcon\Mvc\Controller;
-use XPAY\Api\Common\Msg;
+use SRVX\Api\Common\Msg;
 
 /**
  * TODO DI注入的方法函数在下面添加, 以方便IDE识别, 进行代码编写
  * Class ControllerBase
- * @package XPAY\Api\Controllers
+ * @package SRVX\Api\Controllers
  * @property \Phalcon\Queue\Beanstalk        $queue
  * @property \Phalcon\Tag                    $tag
  * @property \Phalcon\Cache\BackendInterface $cache
@@ -18,9 +18,9 @@ use XPAY\Api\Common\Msg;
  * @property \Phalcon\Db\AdapterInterface    $dbm
  * @property \Phalcon\Db\AdapterInterface    $dbs
  * @property \Phalcon\Config                 $config
- * @property \XPAY\Api\Lib\Service           $s
- * @property \XPAY\Api\Lib\Pay               $pay
- * property \XPAY\Api\Common\Msg             $msg
+ * @property \SRVX\Api\Lib\Service           $s
+ * @property \SRVX\Api\Lib\Pay               $pay
+ * property \SRVX\Api\Common\Msg             $msg
  */
 class ControllerBase extends Controller {
 	var $params = NULL;

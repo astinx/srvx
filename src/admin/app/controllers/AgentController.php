@@ -1,10 +1,10 @@
 <?php
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
 /**
  * 代理管理
  * Class AgentController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class AgentController extends ControllerBase {
 	public function initialize() {

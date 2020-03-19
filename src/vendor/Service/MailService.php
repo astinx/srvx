@@ -1,13 +1,13 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Template\Mail;
-use XPAY\Utils\IP;
+use SRVX\Template\Mail;
+use SRVX\Utils\IP;
 
 /**
  * Class MailService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class MailService extends BaseService {
 	//Todo 发送注册邮件验证码
@@ -48,7 +48,7 @@ class MailService extends BaseService {
 	 * @param string $mailAddr
 	 * @param string $captcha
 	 * @return bool
-	 * @throws \XPAY\Utils\Exception
+	 * @throws \SRVX\Utils\Exception
 	 */
 	public function sendCaptcha(string $mailAddr, string $captcha){
 		$body = sprintf(Mail::Captcha['body'], $captcha);
@@ -71,10 +71,10 @@ class MailService extends BaseService {
 	 * @param $subject
 	 * @param $body
 	 * @return bool
-	 * @throws \XPAY\Utils\Exception
+	 * @throws \SRVX\Utils\Exception
 	 */
 	private function sendMail($receiverAddr, $subject, $body) {
-		$mail            = new \XPAY\Utils\PHPMailer();
+		$mail            = new \SRVX\Utils\PHPMailer();
 		$mail->SMTPDebug = 0; //debug模式, 0,1,2
 		$mail->IsSMTP(); // send via SMTP
 		//$mail->IsHTML(); // send as   HTML

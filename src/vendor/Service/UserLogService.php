@@ -1,17 +1,17 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Base;
+use SRVX\Base;
 
-use XPAY\Model\McOpLog;
-use XPAY\Msg;
-use XPAY\Utils\IP;
+use SRVX\Model\McOpLog;
+use SRVX\Msg;
+use SRVX\Utils\IP;
 
 /**
  * 用户服务(商家与代理统一)
  * Class UserLogService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class UserLogService extends BaseService {
 	//-------------------------------------创建记录-------------------------------------

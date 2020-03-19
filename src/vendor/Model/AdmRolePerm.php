@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Model;
+namespace SRVX\Model;
 
 class AdmRolePerm extends BaseModel
 {

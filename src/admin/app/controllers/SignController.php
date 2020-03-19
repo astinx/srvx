@@ -3,9 +3,9 @@
  * 登录
  */
 
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
-use XPAY\Msg;
+use SRVX\Msg;
 
 class SignController extends ControllerBase {
 	public function initialize() {

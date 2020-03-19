@@ -1,37 +1,37 @@
 <?php
 
-namespace XPAY\Api\Lib;
+namespace SRVX\Api\Lib;
 
 /**
  * Class Service
- * @package XPAY\Api
+ * @package SRVX\Api
  */
 class Service {
 	/**
-	 * @return \XPAY\Api\Lib\Service\AccountService();
+	 * @return \SRVX\Api\Lib\Service\AccountService();
 	 */
 	public function account() {
-		return new \XPAY\Api\Lib\Service\AccountService();
+		return new \SRVX\Api\Lib\Service\AccountService();
 	}
 
 	/**
 	 * @return Service\BalanceService
 	 */
 	public function balance() {
-		return new \XPAY\Api\Lib\Service\BalanceService();
+		return new \SRVX\Api\Lib\Service\BalanceService();
 	}
 
 	/**
 	 * @return Service\TxService
 	 */
 	public function tx() {
-		return new \XPAY\Api\Lib\Service\TxService();
+		return new \SRVX\Api\Lib\Service\TxService();
 	}
 
 	/**
-	 * @return \XPAY\Api\Lib\Service\SysService();
+	 * @return \SRVX\Api\Lib\Service\SysService();
 	 */
 	public function sys() {
-		return new \XPAY\Api\Lib\Service\SysService();
+		return new \SRVX\Api\Lib\Service\SysService();
 	}
 }

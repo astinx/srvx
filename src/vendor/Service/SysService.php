@@ -1,13 +1,13 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\SysSetting;
+use SRVX\Model\SysSetting;
 
 /**
  * 系统设置
  * Class SysService
- * @package XPAY\Service\
+ * @package SRVX\Service\
  */
 class SysService extends BaseService {
 	const SysWebSiteUrl = 'SYS';

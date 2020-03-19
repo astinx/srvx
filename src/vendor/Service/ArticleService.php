@@ -1,9 +1,9 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\Bulletin;
-use XPAY\Model\Msg;
+use SRVX\Model\Bulletin;
+use SRVX\Model\Msg;
 
 /**
  * 用户注册，用户重置密码

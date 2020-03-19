@@ -1,13 +1,13 @@
 <?php
 
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
-use XPAY\Msg;
+use SRVX\Msg;
 
 /**
  * 用户管理
  * Class UserController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class UserController extends ControllerBase {
 	public function initialize() {

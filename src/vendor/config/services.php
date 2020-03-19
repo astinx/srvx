@@ -117,5 +117,5 @@ $di->setShared('redis', function () use ($config) {
 
 // 服务
 $di->setShared('s', function () {
-	return new XPAY\Service;
+	return new SRVX\Service;
 });

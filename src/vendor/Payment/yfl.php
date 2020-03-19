@@ -1,8 +1,8 @@
 <?php
 
-namespace XPAY\Payment;
+namespace SRVX\Payment;
 
-use XPAY\Utils\Curl;
+use SRVX\Utils\Curl;
 
 class YFL {
 	private $appId;

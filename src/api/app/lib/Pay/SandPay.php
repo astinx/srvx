@@ -1,12 +1,12 @@
 <?php
-namespace XPAY\Api\Lib\Pay;
+namespace SRVX\Api\Lib\Pay;
 
 /**
  * 衫德支付
  * http://sandpay.com
  * 联系人: QQ 2217285771
  * Class YFL
- * @package XPAY\Api\Lib\Pay
+ * @package SRVX\Api\Lib\Pay
  */
 class SandPay extends PayBase {
 	var $appUrl;  // 链接

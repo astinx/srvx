@@ -1,12 +1,12 @@
 <?php
 
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
-use XPAY\Utils\QRcode;
+use SRVX\Utils\QRcode;
 
 /**
  * Class OrderController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class TestController extends ControllerBase {
 	public function initialize() {

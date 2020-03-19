@@ -3,9 +3,9 @@
  *
  */
 
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
-use XPAY\Msg;
+use SRVX\Msg;
 
 class ErrController extends ControllerBase {
 	public function initialize() {

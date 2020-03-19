@@ -1,15 +1,15 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\AuthUserApi;
-use XPAY\Model\UserList;
-use XPAY\Msg;
+use SRVX\Model\AuthUserApi;
+use SRVX\Model\UserList;
+use SRVX\Msg;
 
 /**
  * Api操作
  * Class AuthService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class AuthService extends BaseService {
 	/**

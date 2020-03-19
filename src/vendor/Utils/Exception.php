@@ -18,7 +18,7 @@
  * FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-namespace XPAY\Utils;
+namespace SRVX\Utils;
 
 /**
  * PHPMailer exception handler.

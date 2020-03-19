@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Common;
+namespace SRVX\Api\Common;
 class Base {
 	const IP_OFF_AMT_LIMIT   = 20;  // 关闭IP限制状态下每笔限制额度
 	const IP_OFF_COUNT_LIMIT = 50;  // 关闭IP限制状态下每天次数限制

@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
 /**
  * 管理员操作记录
  * Class AdminLogService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class AdminLogService extends BaseService {
 

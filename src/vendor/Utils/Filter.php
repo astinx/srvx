@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Utils;
+namespace SRVX\Utils;
 
 /**
  * 过滤器
  * Class Filter
- * @package XPAY\Utils
+ * @package SRVX\Utils
  */
 class Filter extends \Phalcon\Filter {
 	public static function email($mail) {

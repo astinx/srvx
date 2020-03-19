@@ -1,12 +1,12 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Msg;
+use SRVX\Msg;
 
 /**
  * Class CaptchaService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class SmsService extends BaseService {
 

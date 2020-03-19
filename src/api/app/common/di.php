@@ -111,9 +111,9 @@ $di->setShared('redis', function () use ($config) {
 
 // 服务
 $di->setShared('s', function () {
-	return new XPAY\Api\Lib\Service();
+	return new SRVX\Api\Lib\Service();
 });
 // 支付
 $di->setShared('pay', function () {
-	return new XPAY\Api\Lib\Pay();
+	return new SRVX\Api\Lib\Pay();
 });

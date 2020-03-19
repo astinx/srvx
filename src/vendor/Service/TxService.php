@@ -1,8 +1,8 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\TxPay;
+use SRVX\Model\TxPay;
 
 class TxService extends BaseService {
 	public function createTxId($uid) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Model;
+namespace SRVX\Api\Model;
 
 class BaseModel extends \Phalcon\Mvc\Model {
 	protected function onConstruct() {

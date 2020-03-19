@@ -1,8 +1,8 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Base;
+use SRVX\Base;
 
 class CaptchaService extends BaseService {
 	const CaptchaKey = 'captchaKey';
@@ -37,14 +37,14 @@ class CaptchaService extends BaseService {
 	 * 获取一个图片验证码的base64
 	 */
 	public function getPicBase64() {
-		$captcha = new \XPAY\Utils\Captcha();
+		$captcha = new \SRVX\Utils\Captcha();
 		$captcha->build();
 		$this->redis->setex(Base::PicCaptchaKey . $this->session->getId(), Base::PicCaptchaExpire, $captcha->getCode());
 		return $captcha->base64();
 	}
 
 	public function getPic() {
-		$captcha = new \XPAY\Utils\Captcha();
+		$captcha = new \SRVX\Utils\Captcha();
 		$captcha->build();
 		$this->redis->setex(Base::PicCaptchaKey . $this->session->getId(), Base::PicCaptchaExpire, $captcha->getCode());
 		$captcha->output();

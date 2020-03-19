@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Template;
+namespace SRVX\Template;
 
 class Mail {
 	//注册登录类模板

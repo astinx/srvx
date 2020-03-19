@@ -1,14 +1,14 @@
 <?php
 
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
-use XPAY\Model\UserList;
-use XPAY\Msg;
+use SRVX\Model\UserList;
+use SRVX\Msg;
 
 /**
  * 代理管理
  * Class AgentController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class MerchantController extends ControllerBase {
 	public function initialize() {

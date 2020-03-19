@@ -1,10 +1,10 @@
 <?php
-namespace XPAY\Admin\Controllers;
+namespace SRVX\Admin\Controllers;
 
 /**
  * TODO 文章管理, 暂时不做
  * Class ChannelController
- * @package XPAY\Admin\Controllers
+ * @package SRVX\Admin\Controllers
  */
 class ArticleController extends ControllerBase {
 	public function initialize() {

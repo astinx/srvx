@@ -12,4 +12,4 @@ rem /*  phalcon model pre_faq_topic_recommend_relate --mapcolumn --force --exten
 rem /* phalcon all-models --mapcolumn --force --doc --extends=s --get-set --schema=s --namespace=s */
 
 
-phalcon all-models --force --extends="BaseModel" --namespace="XPAY\Model"
+phalcon all-models --force --extends="BaseModel" --namespace="SRVX\Model"

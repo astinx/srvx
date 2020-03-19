@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Agent\Controllers;
+namespace SRVX\Agent\Controllers;
 
 /**
  * 首頁

@@ -1,14 +1,14 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Template\Mail;
-use XPAY\Utils\IP;
+use SRVX\Template\Mail;
+use SRVX\Utils\IP;
 
 /**
  * 封锁服务
  * Class BlockService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class BlockService extends BaseService {
 	//Todo 发送注册邮件验证码

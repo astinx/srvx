@@ -1,16 +1,16 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Msg;
-use XPAY\Model\UserList;
-use XPAY\Model\LogUserOp;
-use XPAY\Model\AuthUserOtp;
+use SRVX\Msg;
+use SRVX\Model\UserList;
+use SRVX\Model\LogUserOp;
+use SRVX\Model\AuthUserOtp;
 
 /**
  * 所有有关登录信息都在这里处理, 包括用户修改密码
  * Class SignService
- * @package XPAY\Service
+ * @package SRVX\Service
  */
 class UserSignService extends BaseService {
 	var $signTimeOut = 86400;

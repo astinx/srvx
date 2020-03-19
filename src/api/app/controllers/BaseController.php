@@ -1,6 +1,6 @@
 <?php
 
-namespace XPAY\Api\Controllers;
+namespace SRVX\Api\Controllers;
 
 // 账户
 class BaseController extends ControllerBase {

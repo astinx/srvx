@@ -1,11 +1,11 @@
 <?php
 
-namespace XPAY\Service;
+namespace SRVX\Service;
 
-use XPAY\Model\TxPay;
-use XPAY\Model\TxPayHis;
-use XPAY\Model\TxRemit;
-use XPAY\Model\TxRemitHis;
+use SRVX\Model\TxPay;
+use SRVX\Model\TxPayHis;
+use SRVX\Model\TxRemit;
+use SRVX\Model\TxRemitHis;
 
 class OrderService extends BaseService {
 	//TODO 订单计数条件
