@@ -113,7 +113,3 @@ $di->setShared('redis', function () use ($config) {
 $di->setShared('s', function () {
 	return new SRVX\Api\Lib\Service();
 });
-// 支付
-$di->setShared('pay', function () {
-	return new SRVX\Api\Lib\Pay();
-});
